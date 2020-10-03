@@ -11,7 +11,7 @@ app.set('view engine', 'hbs');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }))
 
-app.use('/api', router);
+app.use('/', router);
 
 app.listen(
     PORT,
